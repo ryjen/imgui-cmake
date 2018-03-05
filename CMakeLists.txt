@@ -12,7 +12,7 @@ pkg_search_module(GLEW glew)
 pkg_search_module(OPENGL opengl)
 pkg_search_module(ALLEGRO allegro5)
 
-file(GLOB_RECURSE SOURCE_HEADER RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} imgui/*.h  )
+set(SOURCE_HEADER imgui/imconfig.h imgui/imgui.h imgui/imgui_internal.h imgui/stb_rect_pack.h imgui/stb_textedit.h imgui/stb_truetype.h )
 
 # build main library
 
